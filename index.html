@@ -68,7 +68,7 @@
                             class="btn btn-primary btn-block btnlogin" 
                             aria-label="Sign In" 
                             tabindex="0" 
-                            onclick="window.location.href='https://simugames.vercel.app/home.html';">
+                            onclick="openLocalFile();">
                             Sign In
                         </button>
                     </form>
@@ -76,5 +76,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function openLocalFile() {
+            // Replace the file path with the location of your local file
+            var filePath = 'home.html'; // Adjust the path
+            window.location.href = filePath;
+        }
+    </script>
 </body>
 </html>
