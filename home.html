@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyKaty Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2c5234;
+      margin: 0;
+      padding: 0;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background-color: #111;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      color: #e63946;
+      font-size: 1.5rem;
+    }
+
+    .navbar input {
+      width: 200px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .app {
+      background-color: white;
+      color: black;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .app img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .footer {
+      background-color: #111;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-around;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer img {
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h1>MyKaty</h1>
+    <input type="text" placeholder="Search...">
+  </div>
+
+  <div class="grid-container">
+    <div class="app">
+      <img src="icon1.png" alt="App Icon">
+      <p>A+ Calendars</p>
+    </div>
+    <div class="app">
+      <img src="icon2.png" alt="App Icon">
+      <p>A+ Educational Resources</p>
+    </div>
+    <div class="app">
+      <img src="icon3.png" alt="App Icon">
+      <p>A+ External Apps</p>
+    </div>
+    <!-- Add more app blocks as needed -->
+  </div>
+
+  <div class="footer">
+    <img src="footer1.png" alt="Footer Icon">
+    <img src="footer2.png" alt="Footer Icon">
+    <img src="footer3.png" alt="Footer Icon">
+    <!-- Add more footer icons if needed -->
+  </div>
+</body>
+</html>
