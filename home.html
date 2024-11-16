@@ -51,11 +51,21 @@
       padding: 10px;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .app:hover {
+      transform: scale(1.05);
     }
 
     .app img {
       width: 50px;
       height: 50px;
+    }
+
+    .app a {
+      text-decoration: none;
+      color: black;
     }
 
     .footer {
@@ -82,26 +92,38 @@
   </div>
 
   <div class="grid-container">
-    <div class="app">
-      <img src="icon1.png" alt="App Icon">
-      <p>A+ Calendars</p>
-    </div>
-    <div class="app">
-      <img src="icon2.png" alt="App Icon">
-      <p>A+ Educational Resources</p>
-    </div>
-    <div class="app">
-      <img src="icon3.png" alt="App Icon">
-      <p>A+ External Apps</p>
-    </div>
-    <!-- Add more app blocks as needed -->
+    <a href="https://calendar.example.com" target="_blank">
+      <div class="app">
+        <img src="icon1.png" alt="App Icon">
+        <p>A+ Calendars</p>
+      </div>
+    </a>
+    <a href="https://resources.example.com" target="_blank">
+      <div class="app">
+        <img src="icon2.png" alt="App Icon">
+        <p>A+ Educational Resources</p>
+      </div>
+    </a>
+    <a href="https://externalapps.example.com" target="_blank">
+      <div class="app">
+        <img src="icon3.png" alt="App Icon">
+        <p>A+ External Apps</p>
+      </div>
+    </a>
+    <!-- Add more app blocks with links -->
   </div>
 
   <div class="footer">
-    <img src="footer1.png" alt="Footer Icon">
-    <img src="footer2.png" alt="Footer Icon">
-    <img src="footer3.png" alt="Footer Icon">
-    <!-- Add more footer icons if needed -->
+    <a href="https://footerlink1.example.com" target="_blank">
+      <img src="footer1.png" alt="Footer Icon">
+    </a>
+    <a href="https://footerlink2.example.com" target="_blank">
+      <img src="footer2.png" alt="Footer Icon">
+    </a>
+    <a href="https://footerlink3.example.com" target="_blank">
+      <img src="footer3.png" alt="Footer Icon">
+    </a>
+    <!-- Add more footer icons with links -->
   </div>
 </body>
 </html>
